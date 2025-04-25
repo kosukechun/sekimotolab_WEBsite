@@ -4,60 +4,130 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>研究室メンバー紹介</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>研究室メンバー紹介</h1>
-    <nav>
-      <ul>
-        <li><a href="#professors">教授陣</a></li>
-        <li><a href="#students">学生</a></li>
-        <li><a href="#alumni">卒業生</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="page">
+    <div class="side-column"></div>
 
-  <main>
-    <section id="professors">
-      <h2>教授陣</h2>
-      <div class="member">
-        <img src="images/ebisawa.jpg" alt="海老沢 研" />
-        <div class="info">
-          <h3>関本　裕太郎</h3>
-          <p><strong>所属:</strong> JAXA ISAS 宇宙物理学研究系</p>
-          <p><strong>身分:</strong> 教授</p>
-          <p><strong>研究課題:</strong> Lite BIRD開発</p>
-          <p><strong>趣味:</strong> 山のぼり</p>
-        </div>
-      </div>
-      <!-- 他の教授陣も同様に追加 -->
-    </section>
+    <div class="main-content">
+      <header>
+        <h1>研究室メンバー紹介</h1>
+        <nav aria-label="メインナビゲーション">
+          <ul>
+            <li><a href="#professors">教授陣</a></li>
+            <li><a href="#students">学生</a></li>
+            <li><a href="#alumni">卒業生</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <section id="students">
-      <h2>学生</h2>
-      <div class="member">
-        <img src="images/kurihara.jpg" alt="井上　滉脩" />
-        <div class="info">
-          <h3>井上滉脩</h3>
-          <p><strong>所属:</strong> 公立諏訪東京理科大学</p>
-          <p><strong>身分:</strong> 修士２年</p>
-          <p><strong>研究課題:</strong> 低温アライメント測定</p>
-          <p><strong>趣味:</strong> ゲーム</p>
-        </div>
-      </div>
-      <!-- 他の学生も同様に追加 -->
-    </section>
+      <main>
+        <section id="professors">
+          <h2>教授陣</h2>
+          <p>研究室を指導する教授陣の紹介です。</p>
+          <div class="member">
+            <img src="images/ebisawa.jpg" alt="関本裕太郎の写真" />
+            <div class="info">
+              <h3>関本 裕太郎</h3>
+              <p><strong>所属:</strong> JAXA ISAS 宇宙物理学研究系</p>
+              <p><strong>身分:</strong> 教授</p>
+              <p><strong>研究課題:</strong> LiteBIRD開発</p>
+              <p><strong>趣味:</strong> 山のぼり</p>
+              <p><strong>メッセージ:</strong> 宇宙の未来を切り拓く研究に日々挑戦中です！</p>
+            </div>
+          </div>
 
-    <section id="alumni">
-      <h2>卒業生</h2>
-      <p>準備中です。</p>
-    </section>
-  </main>
+          <div class="member">
+            <img src="oguri.jpg" alt="小栗さんの写真" />
+            <div class="info">
+              <h3>小栗 秀悟</h3>
+              <p><strong>所属:</strong> JAXA ISAS 宇宙物理学研究系</p>
+              <p><strong>身分:</strong> 助教授</p>
+              <p><strong>研究課題:</strong> LiteBIRD望遠鏡の設計</p>
+              <p><strong>趣味:</strong> プログラミング</p>
+              <p><strong>メッセージ:</strong> 宇宙望遠鏡の未来を支えます！</p>
+            </div>
+          </div>
 
-  <footer>
-    <p>&copy; 2025 研究室名. All rights reserved.</p>
-  </footer>
+          <div class="member">
+            <img src="matuda.jpg" alt="マツダさんの写真" />
+            <div class="info">
+              <h3>マツダ フレドリック タカユキ</h3>
+              <p><strong>所属:</strong> JAXA ISAS 宇宙物理学研究系</p>
+              <p><strong>身分:</strong> 特任教授</p>
+              <p><strong>研究課題:</strong> LiteBIRD望遠鏡の光学設計</p>
+              <p><strong>趣味:</strong> 酒</p>
+              <p><strong>メッセージ:</strong> 飲んでも研究、飲まなくても研究！</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="students">
+          <h2>学生</h2>
+          <p>現在在籍している大学院生・学生メンバーです。</p>
+
+          <div class="member">
+            <img src="kosuke.jpg" alt="井上滉脩の写真" />
+            <div class="info">
+              <h3>井上 滉脩</h3>
+              <p><strong>所属:</strong> 公立諏訪東京理科大学</p>
+              <p><strong>身分:</strong> 修士2年</p>
+              <p><strong>研究課題:</strong> 低温アライメント測定</p>
+              <p><strong>趣味:</strong> ゲーム</p>
+              <p><strong>メッセージ:</strong> やるき%！</p>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="images/kurihara.jpg" alt="高橋里音の写真" />
+            <div class="info">
+              <h3>高橋 里音</h3>
+              <p><strong>所属:</strong> 東京大学</p>
+              <p><strong>身分:</strong> 修士2年</p>
+              <p><strong>研究課題:</strong> ミリ波</p>
+              <p><strong>趣味:</strong> 推し活</p>
+              <p><strong>メッセージ:</strong> 推しと宇宙、どっちも大事！</p>
+            </div>
+          </div>
+
+          <div class="member">
+            <img src="images/kurihara.jpg" alt="金子俊平の写真" />
+            <div class="info">
+              <h3>金子 俊平</h3>
+              <p><strong>所属:</strong> 北里大学</p>
+              <p><strong>身分:</strong> 修士2年</p>
+              <p><strong>研究課題:</strong> LiteBIRD望遠鏡ハーフスケールの評価</p>
+              <p><strong>趣味:</strong> 読書</p>
+              <p><strong>メッセージ:</strong> 本と宇宙で毎日満たされています。</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="alumni">
+          <h2>卒業生</h2>
+          <p>これまでに研究室を巣立ったメンバーたちです。</p>
+          <div class="member">
+            <img src="images/kurihara.jpg" alt="三浦の写真" />
+            <div class="info">
+              <h3>三浦</h3>
+              <p><strong>所属:</strong> 横浜国立大学</p>
+              <p><strong>身分:</strong> 修士2年（当時）</p>
+              <p><strong>研究課題:</strong> 電波吸収体</p>
+              <p><strong>趣味:</strong> 酒</p>
+              <p><strong>メッセージ:</strong> 酒と宇宙は人生のエネルギー！</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 研究室名. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <div class="side-column"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
