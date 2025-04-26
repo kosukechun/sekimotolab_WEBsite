@@ -63,11 +63,10 @@ section h2 {
 /* メンバー表示 */
 .member {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin-bottom: 25px;
+  align-items: center;
+  margin-bottom: 30px;
   background-color: #ffffff;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
@@ -77,13 +76,45 @@ section h2 {
   transform: scale(1.01);
 }
 
-.member img {
-  width: 100px;
-  height: 100px;
+/* 左側（アイコンと名前） */
+.member .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin-right: 30px;
+  font-size: 16px;
+}
+
+.member img { 
+  width: 150%; /* ← アイコンのサイズ */
+  height: 200px;/* ← アイコンのサイズ */
   object-fit: cover;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-bottom: 10px; /* ← アイコンの上限 */
+  margin-right: -100px; /* ← アイコンの左右 */
   border: 3px solid #0059b3;
+}
+
+.member .name {
+  font-size: 22px;
+  margin-top: 10px;
+  margin-right: 30px;
+  font-weight: bold;
+  color: #003366;
+  text-align: center;
+}
+
+/* 右側（所属・身分など） */
+.member .info {
+  flex: 1;
+  text-align: left;
+  padding-left: 200px; /* ← 左から20px内側に寄せる */
+}
+
+.member .info p {
+  margin: 6px 0;
+  font-size: 22px;
 }
 
 .info h3 {
@@ -99,4 +130,38 @@ footer {
   padding: 15px;
   font-size: 14px;
   margin-top: 40px;
+}
+
+
+/* ナビゲーションバー基本スタイル */
+.navbar {
+  position: sticky;
+  top: 0; /* 常に上に貼り付ける */
+  background-color: #003366;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ナビゲーションリスト */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 40px;
+}
+
+/* ナビゲーションリンク */
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ffd700;
 }
