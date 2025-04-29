@@ -185,7 +185,7 @@ body {
 
 .member-text h3 {
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .member-text p, .member-text ul {
@@ -230,6 +230,46 @@ body {
   }
 }
 
+/* --- 卒業生リスト --- */
+.alumni-section {
+  margin-top: 60px;
+  padding: 40px;
+  background: #f0f4ff;
+  border: 2px solid #0044cc;
+  border-radius: 10px;
+}
+
+.alumni-section h2 {
+  font-size: 26px;
+  color: #0044cc;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #0044cc;
+  padding-bottom: 8px;
+}
+
+.alumni-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.alumni-item {
+  font-size: 18px;
+  color: #333;
+}
+
+.alumni-year {
+  font-weight: bold;
+  color: #0059b3;
+}
+
+.alumni-name {
+  margin: 0 8px;
+}
+
+.alumni-university {
+  color: #555;
+}
 
 
 
