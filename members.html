@@ -1,125 +1,101 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>研究室メンバー紹介</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メンバー紹介</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page">
-    <div class="side-column"></div>
 
-    <div class="main-content">
-      <header>
-        <h1>研究室メンバー紹介</h1>
-        <nav aria-label="メインナビゲーション">
-          <ul>
-            <li><a href="#professors">教授陣</a></li>
-            <li><a href="#students">学生</a></li>
-            <li><a href="#alumni">卒業生</a></li>
-          </ul>
-        </nav>
-
-        <nav class="navbar">
-          <ul>
-            <li><a href="index.html">研究室紹介</a></li>
-            <li><a href="members.html">メンバー紹介</a></li>
-            <li><a href="research.html">研究紹介</a></li>
-            <li><a href="career.html">進路紹介</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        <section id="professors">
-          <h2>教授陣</h2>
-          <p>研究室を指導する教授陣の紹介です。</p>
-
-          <div class="member">
-            <div class="left">
-              <img src="kosuke.jpg" alt="井上滉関本裕太郎の写真脩の写真" />
-              <div class="name">関本 裕太郎</div>
-            </div>
-
-            <div class="info">
-              <p><strong>所属:</strong> JAXA ISAS 宇宙物理学研究系</p>
-              <p><strong>身分:</strong> 教授</p>
-              <p><strong>研究課題:</strong> LiteBIRD開発</p>
-              <p><strong>趣味:</strong> 山のぼり</p>
-              <p><strong>メッセージ:</strong> 研究研究研究</p>
-            </div>
-          </div>
-
-
-        </section>
-
-        <section id="students">
-          <h2>学生</h2>
-          <p>現在在籍している大学院生・学生メンバーです。</p>
-
-          <div class="member">
-            <div class="left">
-              <img src="kosuke.JPG" alt="井上滉脩の写真" />
-              <div class="name">井上滉脩</div>
-            </div>
-
-            <div class="info">
-              <p><strong>所属:</strong> 公立諏訪東京理科大学</p>
-              <p><strong>身分:</strong> 修士2年</p>
-              <p><strong>研究課題:</strong> 低温アライメント測定</p>
-              <p><strong>趣味:</strong> ゲーム</p>
-              <p><strong>メッセージ:</strong> やるき%！</p>
-            </div>
-          </div>
-          
-          <div class="member">
-            <div class="left">
-              <img src="takahashi.jpg" alt="高橋理音の写真" />
-              <div class="name">高橋理音</div>
-            </div>
-
-            <div class="info">
-              <p><strong>所属:</strong> 東京大学</p>
-              <p><strong>身分:</strong> 修士2年</p>
-              <p><strong>研究課題:</strong> ホログラフィー位相復元</p>
-              <p><strong>趣味:</strong>　さんぽ</p>
-              <p><strong>メッセージ:</strong> ーーーーーーー</p>
-            </div>
-          </div>
-
-
-        </section>
-
-        <section id="alumni">
-          <h2>卒業生</h2>
-          <p>これまでに研究室を巣立ったメンバーたちです</p>
-          <div class="member">
-            <div class="left">
-              <img src="kosuke.jpg" alt="三浦の写真" />
-              <div class="name">三浦</div>
-            </div>
-
-            <div class="info">
-              <p><strong>所属:</strong> 横浜国立大学</p>
-              <p><strong>身分:</strong> 卒業</p>
-              <p><strong>研究課題:</strong> 電波吸収体</p>
-              <p><strong>趣味:</strong> ゲーム</p>
-              <p><strong>メッセージ:</strong> 酒は人生のエネルギー</p>
-            </div>
-          </div>
-
-        </section>
-      </main>
-
-      <footer>
-        <p>&copy; 2025 研究室名. All rights reserved.</p>
-      </footer>
-    </div>
-
-    <div class="side-column"></div>
+  <!-- バナー -->
+  <div class="banner">
+    <img src="banner.jpg" alt="研究室バナー画像">
   </div>
 
-  <script src="script.js"></script>
+  <!-- ナビゲーションバー -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">研究室紹介</a></li>
+      <li><a href="members.html">メンバー紹介</a></li>
+      <li><a href="works.html">研究業績</a></li>
+      <li><a href="admission.html">進学・編入希望者へ</a></li>
+      <li><a href="career.html">進路紹介</a></li>
+      <li><a href="graduates.html">卒業生の進路</a></li>
+    </ul>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <main class="container">
+    <h1>メンバー紹介</h1>
+
+    <!-- 教授陣 -->
+    <section class="member-section">
+      <h2>教授陣</h2>
+
+      <div class="member-box">
+        <div class="member-photo">
+          <img src="images/professor1.jpg" alt="教授の写真">
+          <a href="#" class="photo-caption">Tour de Blue Island 2024</a>
+        </div>
+        <div class="member-text">
+          <h3>関本 裕太郎</h3>
+          <p><strong>所属:</strong></p>
+          <ul>
+            <li><a href="https://www.isas.jaxa.jp/" target="_blank">JAXA ISAS 宇宙物理学研究系</a></li>
+            <li><a href="https://www.u-tokyo.ac.jp/" target="_blank">東京大学大学院 理学研究科 天文学専攻</a></li>
+          </ul>
+
+          <p><strong>身分:</strong> 教授</p>
+          <p><strong>研究課題:</strong></p>
+          <ul>
+            <!-- <li></li> -->
+            <li>宇宙マイクロ波背景放射の偏光観測</li>
+            <!-- <li></li> -->
+            <!-- <li></li> -->
+          </ul>
+          <p><strong>趣味:</strong> 登山</p>
+          <p><strong>メッセージ:</strong> どうしよう</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 研究室生徒 -->
+    <section class="member-section">
+      <h2>研究室生徒</h2>
+
+      <div class="member-box">
+        <div class="member-photo">
+          <img src="kosuke.jpg" alt="学生の写真">
+        </div>
+        <div class="member-text">
+          <h3>井上 滉脩</h3>
+          <p><strong>所属:</strong> <a href="https://www.sus.ac.jp/" target="_blank">公立諏訪東京理科大学</a></p>
+          <p><strong>身分:</strong> 修士2年</p>
+          <p><strong>研究課題:</strong> 低温アライメント測定</p>
+          <p><strong>趣味:</strong> ゲーム、プログラミング</p>
+          <p><strong>メッセージ:</strong> FPS楽しい</p>
+        </div>
+      </div>
+
+      <div class="member-box">
+        <div class="member-photo">
+          <img src="takahashi.jpg" alt="学生の写真">
+        </div>
+        <div class="member-text">
+          <h3>高橋 理音</h3>
+          <p><strong>所属:</strong> <a href="https://www.u-tokyo.ac.jp/" target="_blank">東京大学</a></p>
+          <p><strong>身分:</strong> 修士2年</p>
+          <p><strong>研究課題:</strong> ホログラフィー位相復元</p>
+          <p><strong>趣味:</strong> さんぽ</p>
+          <p><strong>メッセージ:</strong> 酒酒酒</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
 </body>
 </html>

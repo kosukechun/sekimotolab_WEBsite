@@ -1,167 +1,176 @@
-/* 全体構造 */
-.page {
-  display: flex;
-  width: 100vw;
-  min-height: 100vh;
-  background-color: #003366;
-}
-
-.side-column {
-  flex: 3;
-  background-color: #003366;
-}
-
-.main-content {
-  flex: 8;
-  background-color: #f4f6fa;
-  padding: 30px;
-}
-
-/* ヘッダー */
-header {
-  background: linear-gradient(to right, #003366, #0059b3);
-  color: white;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
+/* --- リセットと基本設定 --- */
+* {
   margin: 0;
-  font-size: 28px;
-}
-
-nav ul {
-  list-style: none;
   padding: 0;
-  display: flex;
-  gap: 20px;
-  margin-top: 10px;
+  box-sizing: border-box;
 }
 
-nav ul li a {
-  color: white;
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f5f5f5; /* 薄灰色背景 */
+  color: #333;
+}
+
+/* --- バナー画像 --- */
+.banner {
+  width: 80%; /* 画面の80%幅にする（好きなサイズでOK） */
+  max-width: 1200px; /* 最大サイズも制限する */
+  margin: 0 auto; /* ←これで中央に配置する！ */
+}
+
+.banner img {
+  width: 100%; /* ← .bannerに合わせるのでこのまま */
+  height: 400px; /* 縦も必要なら大きくできる！ */
+  object-fit: cover;
+  display: block;
+  border-radius: 10px; /* （お好みでバナー角丸にもできる） */
+}
+
+
+/* --- ナビゲーションバー --- */
+.navbar {
+  background-color: #0044cc;
+  padding: 15px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 18px;
 }
 
-nav ul li a:hover {
-  color: #ffd700;
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
-/* セクション */
-section {
-  margin-bottom: 50px;
-}
-
-section h2 {
-  border-left: 6px solid #0059b3;
-  padding-left: 10px;
-  color: #003366;
-  margin-bottom: 10px;
-}
-
-/* メンバー表示 */
-.member {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  background-color: #ffffff;
-  padding: 25px;
+/* --- メインコンテンツ --- */
+.container {
+  width: 60%;
+  max-width: 1400px; /* 横広げる */
+  background: #ffffff;
+  margin: 40px auto;
+  padding: 50px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s;
+  box-shadow: 0 0 25px rgba(0,0,0,0.1);
 }
 
-.member:hover {
-  transform: scale(1.01);
+/* --- セクションタイトル --- */
+.member-section {
+  margin-bottom: 60px;
 }
 
-/* 左側（アイコンと名前） */
-.member .left {
+.member-section h2 {
+  font-size: 28px;
+  color: #0044cc;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #0044cc;
+  padding-bottom: 10px;
+}
+
+/* --- メンバーボックス（1人分） --- */
+.member-box {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 200px;
-  margin-right: 30px;
-  font-size: 16px;
-}
-
-.member img { 
-  width: 150%; /* ← アイコンのサイズ */
-  height: 200px;/* ← アイコンのサイズ */
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px; /* ← アイコンの上限 */
-  margin-right: -100px; /* ← アイコンの左右 */
-  border: 3px solid #0059b3;
-}
-
-.member .name {
-  font-size: 22px;
-  margin-top: 10px;
-  margin-right: 30px;
-  font-weight: bold;
-  color: #003366;
-  text-align: center;
-}
-
-/* 右側（所属・身分など） */
-.member .info {
-  flex: 1;
-  text-align: left;
-  padding-left: 200px; /* ← 左から20px内側に寄せる */
-}
-
-.member .info p {
-  margin: 6px 0;
-  font-size: 22px;
-}
-
-.info h3 {
-  margin-top: 0;
-  color: #0059b3;
-}
-
-/* フッター */
-footer {
-  background-color: #002244;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
-  margin-top: 40px;
-}
-
-
-/* ナビゲーションバー基本スタイル */
-.navbar {
-  position: sticky;
-  top: 0; /* 常に上に貼り付ける */
-  background-color: #003366;
-  padding: 10px 0;
-  text-align: center;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* ナビゲーションリスト */
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: inline-flex;
+  background: #f0f4ff;
+  border: 2px solid #0044cc;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 50px;
   gap: 40px;
 }
 
-/* ナビゲーションリンク */
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  transition: color 0.3s;
+/* --- 写真エリア --- */
+.member-photo {
+  flex: 0 0 350px; /* 写真のエリア大きめ */
+  text-align: center;
+  position: relative;
 }
 
-.navbar ul li a:hover {
-  color: #ffd700;
+.member-photo img {
+  width: 300px; /* 横大きく */
+  height: 240px; /* 高さ抑えめで楕円感 */
+  object-fit: cover;
+  border-radius: 50% / 30%; /* 横長楕円 */
+  border: 3px solid #0059b3;
+  margin-bottom: 10px;
+  transform: translateX(-20px); /* 少し左寄せ */
+}
+
+/* --- 写真キャプション（もし使うなら） --- */
+.photo-caption {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #0059b3;
+  text-decoration: none;
+}
+
+.photo-caption:hover {
+  text-decoration: underline;
+}
+
+/* --- テキストエリア --- */
+.member-text {
+  flex: 1; /* 紹介文の幅は「アイコンサイズ変更前と同じ」設定 */
+  padding-left: 20px;
+  text-align: left;
+}
+
+.member-text h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.member-text p, .member-text ul {
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.member-text ul {
+  padding-left: 20px;
+}
+
+.member-text a {
+  color: #0059b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.member-text a:hover {
+  text-decoration: underline;
+}
+
+/* --- レスポンシブ対応 --- */
+@media screen and (max-width: 768px) {
+  .member-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .member-photo {
+    flex: 0 0 auto;
+  }
+
+  .member-photo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .container {
+    width: 95%;
+    padding: 30px;
+  }
 }
