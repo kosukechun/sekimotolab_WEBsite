@@ -12,18 +12,55 @@ body {
 }
 
 /* --- バナー画像 --- */
+/* --- バナー部分の横並びレイアウト --- */
 .banner {
-  width: 80%; /* 画面の80%幅にする（好きなサイズでOK） */
-  max-width: 1200px; /* 最大サイズも制限する */
-  margin: 0 auto; /* ←これで中央に配置する！ */
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  width: 80%; /* 中央に幅を制限する */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
-.banner img {
-  width: 100%; /* ← .bannerに合わせるのでこのまま */
-  height: 400px; /* 縦も必要なら大きくできる！ */
-  object-fit: cover;
-  display: block;
-  border-radius: 10px; /* （お好みでバナー角丸にもできる） */
+.banner-image {
+  flex: 0 0 350px; /* 写真エリア固定サイズ */
+  transform: translateX(20px); /* ←右に20px動かす */
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.banner-text {
+  flex: 1;
+  padding-left: 30px;
+  transform: translateX(30px);
+}
+
+.banner-text p {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.banner-text h1 {
+  font-size: 40px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+/* 右側：追加画像 */
+.banner-right-photo {
+  flex: 0 0 auto;
+  padding-right: 20px;
+}
+
+.banner-right-photo img {
+  width: 200px;         /* サイズ自由に調整可能！ */
+  height: auto;
+  transform: translateY(0px) translateX(0px); /* ← 位置の微調整ここでできる！ */
+  border-radius: 8px;
 }
 
 
@@ -38,6 +75,9 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 80%; /* ← 中央幅を制限する！ */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nav-links li {
@@ -107,6 +147,15 @@ body {
   margin-bottom: 10px;
   transform: translateX(-20px); /* 少し左寄せ */
 }
+/* 教授だけ大きめにする */
+.professor-photo img {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 50% / 30%;
+  border: 3px solid #0059b3;
+  transform: translateX(-20px);
+}
 
 /* --- 写真キャプション（もし使うなら） --- */
 .photo-caption {
@@ -173,4 +222,88 @@ body {
     width: 95%;
     padding: 30px;
   }
+}
+
+
+
+
+
+
+/* #################################################### */
+/* コンテンツエリアレイアウト */
+/* メインテキスト共通 */
+.container p,
+.container li {
+  font-size: 20px; /* ← 標準より大きめ、見やすいサイズに */
+  line-height: 1.8; /* ← 行間をしっかり空ける（標準は1.5ぐらい） */
+  margin-bottom: 15px; /* ← 各段落の間に余白も入れる */
+}
+
+/* セクションタイトル */
+.container h1 {
+  font-size: 32px; /* タイトルはかなり大きめに */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.container h2 {
+  font-size: 26px; /* セクション見出しも大きめに */
+  margin-bottom: 20px;
+  color: #0044cc;
+  border-bottom: 3px solid #0044cc;
+  padding-bottom: 8px;
+}
+
+/* ナビゲーションリンクも少し大きくしておくといいかも */
+.nav-links a {
+  font-size: 20px;
+}
+
+
+/* メイン文章 */
+.main-content {
+  flex: 2;
+}
+
+/* サイドバー */
+.side-content {
+  flex: 1;
+  background: #f0f4ff;
+  padding: 20px;
+  border: 2px solid #0044cc;
+  border-radius: 8px;
+}
+
+.side-content h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #0044cc;
+}
+
+.side-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.side-links li {
+  margin-bottom: 10px;
+}
+
+.side-links a {
+  color: #0044cc;
+  text-decoration: none;
+}
+
+.side-links a:hover {
+  text-decoration: underline;
+}
+
+.side-banner {
+  margin-top: 20px;
+}
+
+.side-banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }

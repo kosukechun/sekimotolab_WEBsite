@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <meta charset="UTF-8" />
-  <nav>
-    <ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>研究室紹介</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- バナー -->
+  <div class="banner">
+    <div class="banner-image">
+      <img src="banner.jpg" alt="研究室バナー画像">
+    </div>
+    <div class="banner-text">
+      <p>宇宙航空研究開発機構　宇宙科学研究所</p>
+      <p>東京大学大学院 理学研究科 天文学専攻</p>
+      <h1>関本研究室</h1>
+    </div>
+    <div class="banner-right-photo">
+      <img src="logo.png" alt="ロゴ">
+    </div>
+  </div>
+
+  <!-- ナビゲーションバー -->
+  <nav class="navbar">
+    <ul class="nav-links">
       <li><a href="index.html">研究室紹介</a></li>
       <li><a href="members.html">メンバー紹介</a></li>
-      <li><a href="research.html">研究紹介</a></li>
+      <li><a href="works.html">研究業績</a></li>
+      <li><a href="admission.html">進学・編入希望者へ</a></li>
       <li><a href="career.html">進路紹介</a></li>
+      <li><a href="graduates.html">卒業生の進路</a></li>
     </ul>
   </nav>
+
+  <!-- メインコンテンツ -->
+  <main class="container">
+    <h1>研究室紹介</h1>
+
+    <div class="content-area">
+      <section class="main-content">
+        <h2>関本研究室の概要</h2>
+        <p>
+          関本研究室はLiteBIRDの開発にかかる研究を行っています
+        </p>
+      </section>
+
+      <section class="main-content">
+        <h2>LiteBIRDについて</h2>
+        <p>
+          LiteBIRDは、宇宙のはじまりを調べます。宇宙はビッグバンからはじまった、と聞いたことがあると思います。ビッグバンは、確かにありました。天球の全方向からやってくる電波が観測されていて、「宇宙マイクロ波背景放射」と呼ばれています。それは、超高温だった宇宙が膨張しながら冷えて現在の姿になったとする標準理論（ΛCDMモデル）の決定的な証拠です。
+        </p>
+        <p>
+          一方で、熱いビッグバンは宇宙誕生の瞬間ではなく、その前に急激な加速膨張があったとするインフレーション理論が提唱されています。標準理論では説明できない課題を一挙に解決できるのですが、インフレーションがあったという確実な証拠はまだ捉えられていません。LiteBIRDは、インフレーションの証拠の観測に挑みます。
+        </p>
+        <p>
+          宇宙が加速膨張すると、空間のゆがみが波として伝わる重力波が発生します。重力波は天体の衝突によっても生じますが、インフレーションによって発生するものはそれと区別して「原始重力波」と呼びます。原始重力波が発生していれば、その痕跡が宇宙マイクロ波背景放射に偏光として残っているのです。
+          宇宙マイクロ波背景放射の偏光の信号はとても弱く、観測が難しいのです。LiteBIRDでは、望遠鏡全体を5K（0K＝- 273.15℃）、検出器を100mKまで冷却することで、ノイズを極限まで低減します。偏光観測感度は、これまでの衛星の約100倍です。LiteBIRDは、原始重力波の痕跡を2020年代に確認できる唯一のミッションです。
+        </p>
+      </section>
+
+      <!-- サイドコンテンツ -->
+      <aside class="side-content">
+        <h3>関連情報</h3>
+        <ul class="side-links">
+          <li><a href="https://www.isas.jaxa.jp/missions/spacecraft/future/litebird.htmll">LiteBIRD詳細</a></li>
+          <li><a href="https://www.astron.s.u-tokyo.ac.jp/admission/graduate/">東京大学入試情報についてのご案内</a></li>
+          <!-- <li><a href="https://www.ipmu.jp/ja/research-activities/research-program/LiteBIRD">IPMU</a></li> -->
+          <!-- <li><a href="https://www.isas.jaxa.jp/" target="_blank">関連リンク（JAXA公式）</a></li> -->
+          <!-- <li><a href="research.html">研究関連本部</a></li> -->
+          <!-- <li><a href="group.html">ミッション研究グループ</a></li> -->
+        </ul>        
+        <div class="side-banner">
+          <!-- <img src="images/side-banner.jpg" alt="特別公開案内"> -->
+        </div>
+      </aside>
+    </div>
+
+  </main>
+
 </body>
 </html>
