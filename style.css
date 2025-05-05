@@ -8,6 +8,7 @@
 body {
   font-family: 'Arial', sans-serif;
   background: #f5f5f5; /* 薄灰色背景 */
+  /* background: #e1dddd; 灰色背景 */
   color: #333;
 }
 
@@ -414,3 +415,29 @@ body {
   color: #666;
   margin-top: 40px;
 }
+
+/* ########################################? */
+/* --- セクションボックス汎用 --- */
+.section-box {
+  margin-bottom: 40px;
+  padding: 30px;
+  background: #f9fbff;
+  border: 2px solid #0044cc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.section-box h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #0044cc;
+  border-bottom: 1px solid #0044cc;
+  padding-bottom: 6px;
+}
+
+.section-box p,
+.section-box li {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
